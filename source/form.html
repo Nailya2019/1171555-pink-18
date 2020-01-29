@@ -26,6 +26,37 @@
 	<main class="page-competition">
 		<section class="competition">
 			<h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+			<form action="" method="post" class="competition__form">
+				<div class="competition__wrap">
+					<div class="competition__inner">
+						<label class="competition__label">Фамилия</label>
+						<input type="text" name="lastname" placeholder="Укажите фамилию*" class="competition__field" required>
+						<label class="competition__label">Имя</label>
+						<input type="text" name="firstname" placeholder="Укажите ваше имя*" class="competition__field" required>
+						<label class="competition__label">Отчество</label>
+						<input type="text" name="patronymic" placeholder="Ну и отчество тоже" class="competition__field">
+					</div>
+				</div>
+				
+				<div class="competition__wrap competition__wrap--gray">
+					<div class="competition__inner">
+						<p class="competition__title">С каким приложением путешествовали?</p>
+						<input type="radio" name="os" id="ios" value="iOS"><label for="ios" class="competition__os-label">Pink для iOS</label>
+						<input type="radio" name="os" id="Android" value="Android"><label for="Android" class="competition__os-label">Pink на Android</label>
+						<input type="radio" name="os" id="Windows" value="Windows"><label for="Windows" class="competition__os-label">Windows Phone</label>
+
+					</div>
+				</div>
+				<div class="competition__wrap">
+					<div class="competition__inner">
+						<label class="competition__label">Номер телефона</label>
+						<input type="tel" name="tel" placeholder="Номер, пожалуйста" class="competition__field">
+						<label class="competition__label">Адрес почты</label>
+						<input type="email" name="email" placeholder="Введите почту*" class="competition__field" required>						
+					</div>
+				</div>
+			</form>
 		</section>
 	</main>
 
